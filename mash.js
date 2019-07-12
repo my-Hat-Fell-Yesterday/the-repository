@@ -6,8 +6,10 @@
 
 	2) Execute the function!
 */
-
-
+function mash(){
+	console.log("You will live " + gethome1() + ", and you will have " + getChildrenCount() + ", and you will drive a " + getMatchedCSSRules());
+}
+mash();
 
 
 
@@ -18,9 +20,32 @@
 		i)HINT: Use an array to store the strings
 		ii)HINT: Use Math.random() to choose a random index
 */
+var gethome =["mansion", "Apartment",  "Shack"];
+function gethome1(){
+	rand = Math.random()*gethome.length;
+	rand1 = Math.floor(rand);
+	randomhometype = gethome[rand1];
+	console.log(randomhometype);
+}
+gethome1();
 
 
 
+
+
+
+
+
+
+
+
+
+
+var kidAmount = ["1 child", "2 children", "3 children", "4 children"];
+function getChildrenCount() {
+	var getChildAmount = kidAmount[Math.floor(Math.random()*4)];
+	return getChildAmount;
+}
 
 
 /*
@@ -31,7 +56,7 @@
 	5)Create a new function called 'getChildrenCount' that takes no parameters and 
 	returns a number between 0 and 100
 */
-
+ 
 
 
 /*
